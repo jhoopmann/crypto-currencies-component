@@ -1,0 +1,44 @@
+{
+  "name": "jhoopmann/crypto-currencies-component",
+  "type": "library",
+  "version": "1.0.0",
+  "description": "Livewire Component for crypto fiat exchange rates",
+  "authors": [
+    {
+      "name": "Jonas Hoopmann",
+      "email": "git@jhoopmann.de"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Jhoopmann\\CryptoCurrenciesComponent\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "8.3.*",
+    "codenix-sv/coingecko-api": "^1.0"
+  },
+  "require-dev": {
+    "laravel/framework": "^11.9",
+    "livewire/livewire": "^3.5",
+    "phpunit/phpunit": "^11.0.1",
+    "laravel/pint": "^1.13",
+    "laravel/sail": "^1.26",
+    "mockery/mockery": "^1.6",
+    "nunomaduro/collision": "^8.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Jhoopmann\\CryptoCurrenciesComponent\\Providers\\LibraryServiceProvider"
+      ]
+    }
+  }
+}
